@@ -27,12 +27,11 @@ def reduce_number(number)
 		sum = 0
 		# For each digit in the number
 		for digit in split_digits
-			# Convert it into an integer and add to to the total "sum"
+			# Convert it into an integer and add it to the total "sum"
 			sum += digit.to_i
 		end
+		# Recursion
 		reduce_number(sum)
-		# # Return the total sum
-		# return sum
 	else
 		return number
 	end
